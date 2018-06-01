@@ -1,0 +1,13 @@
+{{number}}
+<div (click)="add()">ADD</div>
+<div (click)="low()">LOW</div>
+<div (click)="reset()">RESET</div>
+
+<button (click)="bringPosts()"> bring posts</button>
+
+<div *ngFor="let post of posts">
+  {{ post.id }}, 
+  {{ post.title }}
+</div>
+
+<router-outlet></router-outlet>
